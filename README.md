@@ -9,3 +9,5 @@ this was still the initial experimental version of the portfolio
 ![](screenshot.jpeg)
 
 # screenshot-v2; added sun+glow, shadows, fog, sky, beaches, hills, dunes
+
+![](screenshot2.jpeg)
