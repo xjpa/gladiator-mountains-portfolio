@@ -4,6 +4,8 @@ was watching one of the GOAT [hero's journey](https://en.wikipedia.org/wiki/Hero
 
 this was still the initial experimental version of the portfolio
 
-# screenshot
+# screenshot-v1
 
 ![](screenshot.jpeg)
+
+# screenshot-v2; added sun+glow, shadows, fog, sky, beaches, hills, dunes
