@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Patrick Amata</title>
+    <script src="cdnjs.cloudflare.com_ajax_libs_three.js_r128_three.min.js"></script>
+    <style>
+      canvas {
+        display: none;
+      }
+            body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:visited,
+      .blue {
+        color: blue;
+      }
+      .expanding-details .details-content {
+        display: none;
+      }
+
+      .expanding-details.active .details-content {
+        display: block;
+      }
+
+      .toggle-details {
+        cursor: pointer;
+      }
+
+      .intro {
+        background-color: #edf2f7;
+        padding: 10px;
+      }
+
+      .blinking-background {
+        width: 100%;
+        height: 100vh;
+        background-color: #edf2f7;
+        animation: blink 1s infinite;
+        padding: 3px;
+        font-weight: bold;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          background-color: #edf2f7;
+        }
+        50% {
+          background-color: #c7d8e5;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <div style="position: fixed; top: 10px; left: 20px; z-index: 1000">
+      <h2 id="welcome">Hello, I'm John</h2>
+      <audio controls="" class="smaller-audio-player">
+        <source
+          src="https://xjpa-assets-2023.netlify.app/music/gladiator-theme-song.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <p>
+        <span class="intro"
+          >i <a href="https://blog.johnamata.com">blog</a>. sometimes i
+          <span class="blinking-background"
+            ><a href="https://archive.is/9MloV">hack</a></span
+          >
+          for fun</span
+        >
+      </p>
+      <section>
+        <style>
+          .smaller-audio-player-container {
+            height: 30px; 
+            overflow: hidden;
+          }
+
+          .smaller-audio-player {
+            transform: scale(0.8);
+            transform-origin: top left;
+          }
+        </style>
+      <div>
+        <section>
+          <!-- computation -->
+          <p>- <span class="blue toggle-details">computation</span></p>
+          <div class="expanding-details">
+            <blockquote class="details-content">
+              <p>
+                -
+                <a href="https://github.com/" target="_blank"
+                  >MapReduce Engine</a
+                >
+              </p>
+              <p>
+                -
+                <a href="https://github.com/" target="_blank"
+                  >Custom Deep Learning Framework</a
+                >
+              </p>
+            </blockquote>
+          </div>
+        </section>
+  
+        <section>
+          <!-- databases -->
+          <p>
+            -
+            <span class="blue toggle-details">data infra</span>
+          </p>
+          <div class="expanding-details">
+            <blockquote class="details-content">
+              <p>
+                -
+                <a href="https://github.com/xjpa/gattiDB" target="_blank"
+                  >SQL Query Engine</a
+                >
+              </p>
+              <p>
+                -
+                <a href="https://github.com/xjpa/gattiDB" target="_blank"
+                  >Columnar Storage Engine</a
+                >
+              </p>
+            </blockquote>
+          </div>
+        </section>
+  
+        <section>
+          <!-- systems -->
+          <p>- <span class="blue toggle-details">systems</span></p>
+          <div class="expanding-details">
+            <blockquote class="details-content">
+              <p>
+                -
+                <a
+                  href="https://github.com/xjpa/build-build-build"
+                  target="_blank"
+                  >Custom Load Balancer</a
+                >
+              </p>
+              <p>
+                -
+                <a href="https://github.com/" target="_blank"
+                  >Rate Limiter</a
+                >
+              </p>
+            </blockquote>
+          </div>
+        </section>
+        <section>
+          <!-- web -->
+          <p>- <span class="blue toggle-details">web</span></p>
+          <div class="expanding-details">
+            <blockquote class="details-content">
+              <p>
+                -
+                <a
+                  href="https://github.com/xjpa/build-build-build"
+                  target="_blank"
+                  >YouTube clone</a
+                >
+              </p>
+            </blockquote>
+          </div>
+        </section>
+        <aside>
+            <p>Soon, I'll link their github, once they are done (before christmas)</p>
+            <p>For now if you want to <span class="accent">contact</span> me:</p>
+            <p id="myText" onclick="changeText()">[click to view email]</p>
+          </aside>
+        </div>  
+    </div>
+    <script src="email.js"></script>
+    <script src="details.js"></script>
+    <script src="showcanvas.js"></script>
+    <script src="render.js"></script>
+  </body>
+</html>
